@@ -1,0 +1,94 @@
+.navbar {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: #f2f6fe;
+}
+
+.navList ul {
+  margin-right: 194px;
+}
+
+.navList li {
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+.navList li:last-of-type {
+  margin-right: 0;
+}
+
+.navList li a {
+  color: #404040 !important;
+}
+
+.navButton button {
+  background-color: #fc7e1a;
+  color: #fff;
+  border: none;
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.navButton button span {
+  margin-right: 5.2px;
+}
+
+.navButton button i {
+  font-size: 10px;
+}
+
+.menuButton {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.menuButton span {
+  width: 30px;
+  height: 3px;
+  background-color: #404040;
+}
+
+@media screen and (max-width: 1024px) {
+  .navList ul {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navList ul {
+    /* display: none !important; */
+    position: fixed;
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-start !important;
+    row-gap: 30px;
+    height: 100%;
+    background-color: #f2f6fe;
+    padding: 60px 20px;
+    right: -280px;
+  }
+
+  .navButton {
+    display: none !important;
+  }
+
+  .menuButton {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+}

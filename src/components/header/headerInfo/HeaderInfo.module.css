@@ -1,0 +1,109 @@
+.headerInfo {
+  background-color: #2e4aa7;
+  color: #fff;
+  height: 50px;
+}
+
+.agency p {
+  font-size: 15px;
+}
+
+.headerInfoSocial i {
+  font-size: 14px;
+  margin-right: 8.2px;
+}
+
+.headerInfoSocial span {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.agencyPhone {
+  margin-right: 40px;
+}
+
+.agencyEmail {
+  margin-right: 40px;
+}
+
+.socialIcons a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.socialIcons a i {
+  font-size: 16px;
+}
+
+.socialIcons a:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .headerInfo .agency p {
+    font-size: 12px;
+  }
+
+  .headerInfoSocial i {
+    font-size: 11px;
+  }
+
+  .headerInfoSocial span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .headerInfo .container {
+    flex-direction: column;
+  }
+
+  .agencyPhone {
+    margin-right: 10px;
+  }
+
+  .agencyEmail {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .agencyPhone {
+    margin-right: 10px;
+  }
+
+  .agencyEmail {
+    margin-right: 10px;
+  }
+
+  .headerInfoSocial i {
+    margin-right: 5px;
+  }
+
+  .socialIcons a i {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .agencyPhone {
+    margin-right: 5px;
+  }
+
+  .agencyEmail {
+    margin-right: 5px;
+  }
+
+  .headerInfoSocial i {
+    margin-right: 2px;
+  }
+
+  .socialIcons a {
+    margin-right: 2px;
+    font-size: 10px;
+  }
+
+  .socialIcons a i {
+    font-size: 10px;
+  }
+}

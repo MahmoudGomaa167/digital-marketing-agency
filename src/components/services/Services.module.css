@@ -1,0 +1,96 @@
+.services {
+  padding-bottom: 120px;
+}
+
+.servicesHeader {
+  text-align: center;
+  margin: auto;
+  max-width: 55%;
+  margin-bottom: 40px;
+}
+
+.servicesHeader h6 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fc7e1a;
+}
+
+.servicesHeader h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 52px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardImage {
+  width: 100%;
+  padding: 20.6px 0 39.4px;
+  background-color: #f1f6fe;
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.cardInfo {
+  padding: 30px 26px 32px;
+  text-align: center;
+}
+
+.cardInfo h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2e4aa7;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover .cardInfo h3 {
+  color: #fc7e1a;
+}
+
+.cardInfo p {
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1024px) {
+  .servicesHeader h2 {
+    font-size: 42px;
+  }
+
+  .cardInfo p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .servicesHeader {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .servicesHeader {
+    max-width: 100%;
+  }
+  .servicesHeader h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .servicesHeader h6 {
+    font-size: 18px;
+  }
+  .servicesHeader h2 {
+    font-size: 24px;
+  }
+}

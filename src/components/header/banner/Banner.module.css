@@ -1,0 +1,93 @@
+.banner {
+  height: 80vh;
+  background-image: url(../../../images/Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bannerInfo {
+  max-width: 515px;
+}
+
+.bannerInfo h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 65px;
+  color: #2e4aa7;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.bannerInfo h1 span {
+  color: #fc7e1a;
+}
+
+.bannerInfo p {
+  color: #404040;
+  font-size: 17px;
+  margin-bottom: 70px;
+}
+
+.bannerButton button {
+  min-width: 200px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #fc7e1a;
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.bannerButton button span {
+  margin-right: 8.2px;
+}
+
+.banner img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner img:hover {
+  animation: moving 1s linear alternate infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bannerInfo h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bannerInfo h1 {
+    font-size: 43px;
+  }
+
+  .bannerInfo p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bannerInfo {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .bannerInfo h1 {
+    font-size: 37px;
+  }
+  .bannerInfo p {
+    font-size: 13px;
+  }
+}

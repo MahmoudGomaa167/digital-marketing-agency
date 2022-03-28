@@ -1,0 +1,112 @@
+.about {
+  padding: 130.8px 0 120.3px;
+}
+
+.aboutImage img:hover {
+  animation: moving 1s linear alternate infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.aboutBrief h6 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fc7e1a;
+  margin-bottom: 10px;
+}
+
+.aboutBrief h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  color: #2e4aa7;
+  margin-bottom: 20px;
+}
+
+.aboutBrief p:first-of-type {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+  color: #404040;
+  margin-bottom: 43px;
+}
+
+.aboutBrief p:last-of-type {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  max-width: 90%;
+  margin-bottom: 57px;
+}
+
+.aboutBrief button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 60px;
+  background-color: #fc7e1a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.aboutBrief button span {
+  margin-right: 8.2px;
+}
+
+.aboutBrief button i {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutBrief h2 {
+    font-size: 43px;
+  }
+  .aboutBrief p:first-of-type {
+    font-size: 17px;
+  }
+
+  .aboutBrief p:last-of-type {
+    font-size: 15px;
+    max-width: 98%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutBrief h6 {
+    font-size: 20px;
+  }
+
+  .aboutBrief h2 {
+    font-size: 31px;
+  }
+
+  .aboutBrief p:last-of-type {
+    font-size: 15px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .aboutBrief h6 {
+    font-size: 18px;
+  }
+
+  .aboutBrief h2 {
+    font-size: 27px;
+  }
+
+  .aboutBrief p:first-of-type {
+    font-size: 15px;
+  }
+
+  .aboutBrief p:last-of-type {
+    font-size: 12px;
+  }
+}
