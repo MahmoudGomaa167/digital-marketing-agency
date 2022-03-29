@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage from '../../images/Illustration.jpg'
+import aboutImage from '../../images/about.gif'
 import styles from './About.module.css'
 
 export const About = () => {

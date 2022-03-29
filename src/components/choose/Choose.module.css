@@ -53,6 +53,11 @@
   font-weight: 600;
 }
 
+.progressHeader span {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 .progress .bar {
   position: relative;
   width: 100%;
@@ -60,26 +65,28 @@
   background-color: #ebebeb;
 }
 
-.progress .bar::after {
+.progress .bar span {
   content: "";
   position: absolute;
   height: 100%;
   background-color: #fc7e1a;
+  width: 0;
+  transition: all 0.6s ease-in-out;
 }
 
-.progress:first-of-type .bar::after {
+/* .progress:first-of-type .bar span {
   width: 90%;
 }
 
-.progress:nth-of-type(2) .bar::after {
+.progress:nth-of-type(2) .bar span {
   width: 85%;
 }
-.progress:nth-of-type(3) .bar::after {
+.progress:nth-of-type(3) .bar span {
   width: 80%;
 }
-.progress:last-of-type .bar::after {
+.progress:last-of-type .bar span {
   width: 95%;
-}
+} */
 
 .chooseImage img {
   animation: moving 1s linear alternate infinite;

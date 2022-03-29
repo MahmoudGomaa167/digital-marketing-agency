@@ -1,10 +1,46 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import chooseImage from '../../images/IllustrationChoose.svg'
 import styles from './Choose.module.css'
 
 const Choose = () => {
+    const choose = useRef();
+
+
+    useEffect(() => {
+        progressOnScroll()
+    }, [])
+
+    const progressOnScroll = () => {
+        let progressSectionOffset = choose.current.offsetTop;
+        let progressPercent = document.querySelectorAll('.progressPercent');
+        let percent = document.querySelectorAll('.percent');
+        console.log(percent)
+
+        window.addEventListener('scroll', () => {
+            if (Math.floor(window.scrollY) > progressSectionOffset - 200) {
+                progressPercent.forEach((element) => {
+                    element.style.width = `${element.dataset['width']}%`;
+                });
+                percent.forEach(element => {
+                    element.style.opacity = '1'
+                })
+            } else {
+                progressPercent.forEach((element) => {
+                    element.style.width = 0;
+                })
+                percent.forEach(element => {
+                    element.style.opacity = '0'
+                })
+            }
+
+        })
+    }
+
+
+
+
     return (
-        <section className={styles.choose}>
+        <section className={styles.choose} id="choose" ref={choose}>
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-6 col-md-6 mb-5'>
@@ -21,32 +57,32 @@ const Choose = () => {
                                 <div className={styles.progress}>
                                     <div className={styles.progressHeader}>
                                         <h4>Digital Analytics</h4>
-                                        <span>90%</span>
+                                        <span className='percent'>90%</span>
                                     </div>
-                                    <div className={styles.bar}></div>
+                                    <div className={styles.bar}><span data-width="90" className='progressPercent'></span></div>
                                 </div>
                                 <div className={styles.progress}>
                                     <div className={styles.progressHeader}>
                                         <h4>Page Ranking</h4>
-                                        <span>85%</span>
+                                        <span className='percent'>85%</span>
                                     </div>
                                     <div className={styles.bar}>
-
+                                        <span data-width="85" className='progressPercent'></span>
                                     </div>
                                 </div>
                                 <div className={styles.progress}>
                                     <div className={styles.progressHeader}>
                                         <h4>Social Marketing</h4>
-                                        <span>80%</span>
+                                        <span className='percent'>80%</span>
                                     </div>
-                                    <div className={styles.bar}></div>
+                                    <div className={styles.bar}><span data-width="80" className='progressPercent'></span></div>
                                 </div>
                                 <div className={styles.progress}>
                                     <div className={styles.progressHeader}>
                                         <h4>Content Marketing</h4>
-                                        <span>95%</span>
+                                        <span className='percent'>95%</span>
                                     </div>
-                                    <div className={styles.bar}></div>
+                                    <div className={styles.bar}><span data-width="95" className='progressPercent'></span></div>
                                 </div>
                             </div>
                         </div>
