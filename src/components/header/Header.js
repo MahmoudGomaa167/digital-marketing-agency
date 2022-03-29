@@ -8,7 +8,6 @@ const Header = () => {
     return (
         <header className={styles.header} id='home'>
 
-            <HeaderInfo />
             <Navbar />
             <Banner />
         </header>

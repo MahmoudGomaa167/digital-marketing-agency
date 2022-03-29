@@ -2,7 +2,7 @@
   padding: 130.8px 0 120.3px;
 }
 
-.aboutImage img:hover {
+.aboutImage img {
   animation: moving 1s linear alternate infinite;
 }
 
